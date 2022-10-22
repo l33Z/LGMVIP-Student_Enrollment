@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background: rgba(17, 67, 90, 0.285);
+}
+
+.header h2 {
+  font-size: 2rem;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.mainSection {
+  height: calc(100vh - 5rem);
+  display: flex;
+  align-items: center;
+}
+
+.formMain {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  padding-left: 5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.338);
+}
+
+.field {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.field label {
+  font-size: 1.8rem;
+}
+
+.choices {
+  display: flex;
+}
+
+.choices label {
+  margin-left: 1rem;
+}
+
+.field input {
+  width: 80%;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.532);
+  border-radius: 1px;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff1a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.331);
+}
+
+.btnGroups {
+  width: 80%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnGroups .btn {
+  width: 48%;
+  font-size: 1.5rem;
+  background-color: #16a34a;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.418);
+}
+
+.btnGroups .btn:hover {
+  transform: translateY(-0.5rem);
+}
+
+.reset {
+  background-color: #e53e3e !important;
+}
+
+.studentList {
+  width: 50%;
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.studentList h1 {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.list {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.418);
+  background-color: #2a2e35;
+}
+
+.leftSide {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide img {
+  width: 80%;
+}
+
+.rightSide {
+  margin-left: 1rem;
+}
+
+.rightSide h3 {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+/* -------------------------- Media Query -------------------------- */
+
+@media screen and (max-width: 1288px) {
+  .formMain {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mainSection {
+    height: auto;
+    flex-direction: column;
+  }
+  .formMain {
+    width: 90%;
+    padding-left: 0;
+    align-items: center;
+    border-right: none;
+  }
+  .studentList {
+    width: 90%;
+    max-height: auto;
+    margin-top: 3rem;
+    overflow-y: visible;
+    overflow-x: visible;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .formMain {
+    width: 100%;
+  }
+  .field {
+    width: 90%;
+  }
+  .field input {
+    width: 70%;
+  }
+  .btnGroups {
+    width: 90%;
+  }
+  .studentList {
+    width: 90%;
+    margin-top: 3rem;
+  }
+  .list {
+    width: 100%;
+  }
+}
