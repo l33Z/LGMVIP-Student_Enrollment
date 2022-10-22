@@ -76,7 +76,7 @@ function App() {
             <label htmlFor="email">Email : </label>
             <input
               type="email"
-              placeholder="Enter Yor Email"
+              placeholder="Enter Your Email"
               id="email"
               className="email"
               value={StudentEmail}
@@ -88,7 +88,7 @@ function App() {
             <label htmlFor="website">Website : </label>
             <input
               type="text"
-              placeholder="Enter Yor Website"
+              placeholder="Enter Your Website"
               id="website"
               className="website"
               value={StudentWebsite}
